@@ -1,0 +1,301 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #e8f5e9, #fffde7);
+  min-height: 100vh;
+}
+
+h2 {
+  color: #2e7d32;
+}
+
+.btn-primary {
+  background-color: #2e7d32;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1b5e20;
+}
+
+#contact a.btn {
+  transition: transform 0.2s ease-in-out;
+}
+
+#contact a.btn:hover {
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   Reveal on Scroll
+   ========================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Respeta accesibilidad: si el usuario prefiere menos animación */
+@media (prefers-reduced-motion: reduce) {
+
+  .reveal,
+  .reveal.is-visible {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* =========================
+   Card hover (interactividad)
+   ========================= */
+.card-hover {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   Botones: hover más claro
+   ========================= */
+.btn,
+a.btn {
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, color 160ms ease;
+  will-change: transform;
+}
+
+.btn:hover,
+a.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Tu efecto específico para #contact ya lo tenías; se suma sin conflictos. */
+
+/* =========================
+   Footer: Separador visual
+   ========================= */
+.footer-sep {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 -6px 16px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ===== Badges por tecnología ===== */
+.badge-tech {
+  border: 0;
+  font-weight: 600;
+  letter-spacing: .2px;
+  padding: .44rem .62rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+}
+.badge-tech:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* Sólidos */
+.badge-tech--java {
+  background: #f89820;
+  color: #111;
+}
+.badge-tech--java:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(244, 146, 66, 0.45);
+}
+
+/* Java naranja */
+.badge-tech--spring {
+  color: #fff;
+  background-image: linear-gradient(10deg, #000000 0%, #17d317 45%, #40e018 100%);
+}
+.badge-tech--spring:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(81, 244, 66, 0.45);
+}
+
+/* Spring */
+.badge-tech--postgresql {
+  background: #336791;
+  color: #fff;
+}
+.badge-tech--postgresql:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 143, 244, 0.45);
+}
+
+/* PostgreSQL */
+.badge-tech--prisma {
+  background: #0c344b;
+  color: #e8f6ff;
+}
+.badge-tech--prisma:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 93, 244, 0.45);
+}
+
+/* Prisma */
+.badge-tech--express {
+  background: #24292e;
+  color: #fff;
+}
+.badge-tech--express:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* Express */
+.badge-tech--jwt {
+  background: #3d3d3d;
+  color: #fff;
+}
+.badge-tech--jwt:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* JWT */
+.badge-tech--otp {
+  background: #5a189a;
+  color: #fff;
+}
+.badge-tech--otp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(223, 66, 244, 0.45);
+}
+
+/* OTP */
+.badge-tech--seguridad {
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 0.6em 0.8em;
+  margin-top: 8px; /* 👈 baja ligeramente la posición */
+  display: inline-block;
+}
+.badge-tech--seguridad:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 244, 66, 0.45);
+}
+
+/* Seguridad */
+.badge-tech--ia {
+  background: #111827;
+  color: #e5e7eb;
+}
+.badge-tech--ia:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 244, 96, 0.45);
+}
+
+/* IA/Hopfield */
+
+/* Gradientes (multi-color) */
+.badge-tech--python {
+  color: #fff;
+  background-image: linear-gradient(135deg, #12d60c 0%, #1f661f 45%, #000000 100%);
+}
+.badge-tech--python:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 244, 75, 0.45);
+}
+
+.badge-tech--angular {
+  color: #fff;
+  background-image: linear-gradient(135deg, #dd00ad 0%, #0003c3 100%);
+}
+.badge-tech--angular:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(188, 66, 244, 0.45);
+}
+
+.badge-tech--react {
+  color: #0b2b33;
+  background-image: linear-gradient(135deg, #a7f3f7 0%, #67e8f9 45%, #22d3ee 100%);
+}
+.badge-tech--react:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 244, 235, 0.45);
+}
+
+.badge-tech--node {
+  color: #0b2c12;
+  background-image: linear-gradient(135deg, #c6f6d5 0%, #68d391 60%, #48bb78 100%);
+}
+
+.badge-tech--node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(116, 244, 66, 0.45);
+}
+
+.badge-tech--docker {
+  color: #0b2545;
+  background-image: linear-gradient(135deg, #cfe8ff 0%, #6aa7ff 60%, #1d63ff 100%);
+}
+.badge-tech--docker:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 84, 244, 0.45);
+}
+
+.badge-tech--fastapi {
+  color: #0b2c2c;
+  background-image: linear-gradient(135deg, #a7f3d0 0%, #34d399 60%, #10b981 100%);
+}
+.badge-tech--fastapi:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(152, 244, 66, 0.45);
+}
+
+.badge-tech--primeng {
+  background: #e71915;
+  color: #fff;         
+}
+
+.badge-tech--primeng:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(244, 66, 66, 0.45);
+}
+
+.badge-tech--recaptcha {
+  color: #fff;
+  background-image: linear-gradient(
+    135deg,
+    #34A853 10%,
+    #EA4335 25%,
+    #FBBC05 50%,
+    #4285F4 100%
+  );
+  box-shadow: 0 3px 10px rgba(87, 244, 66, 0.35);
+  font-weight: 600;
+  border: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge-tech--recaptcha:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 133, 244, 0.45);
+}
+
+.card-img-top {
+  height: 220px; /* ajusta a gusto: 200–250px funcionan bien */
+  object-fit: cover; /* mantiene proporción y recorta el exceso */
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .card-img-top {
+    height: 260px;
+  }
+}

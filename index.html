@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Ícono (coloca s.svg en /public). 
+         Vite reescribe rutas absolutas según base, por eso usamos "/s.svg". -->
+    <link rel="icon" type="image/svg+xml" href="/s.svg" />
+
+    <!-- Fuente (mejor rendimiento con preconnect) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sinoe Ruiz Web Oficial</title>
+
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Portafolio personal de Cristian Sinoe Hernández Ruiz, creado con React, Vite y Bootstrap. Proyectos, contacto y principios de diseño visual."
+    />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Apariencia del navegador -->
+    <meta name="theme-color" content="#2e7d32" />
+    <meta name="color-scheme" content="light only" />
+
+    <!-- Open Graph / Social (opcional, mejora previews) -->
+    <!-- <meta property="og:title" content="Sinoe Ruiz Web Oficial" />
+    <meta property="og:description" content="Portafolio personal de Cristian Sinoe Hernández Ruiz." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-cover.jpg" /> -->
+  </head>
+
+  <body>
+    <noscript>
+      Necesitas habilitar JavaScript para ver este sitio.
+    </noscript>
+
+    <div id="root"></div>
+
+    <!-- Entrada de la app (Vite ajusta esta ruta con base en build para Pages) -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
